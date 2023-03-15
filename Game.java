@@ -497,10 +497,10 @@ public class Game extends AbstractGame{
     public void checkMate(){
         //Red wins
         if(turn.equals("black")) {
-            System.out.println("ŞAH MAT! " + black.name + " oyunu kazandı. " + black.name + "'in puanı: " + black.puan + ", " + red.name + "'nin puanı: " + red.puan);
+            System.out.println("CHECK MATE! " + black.name + " win the game. " + black.name + "'s point is: " + black.puan + ", " + red.name + "'s point is: " + red.puan);
         }//Black wins
         else if(turn.equals("red")) {
-            System.out.println("ŞAH MAT! " + red.name + " oyunu kazandı. " + red.name + "'in puanı: " + red.puan + ", " + black.name + "'nin puanı: " + black.puan);
+            System.out.println("CHECK MATE! " + red.name + " win the game.  " + red.name + "'s point is: " + red.puan + ", " + black.name + "'s point is: " + black.puan);
         }
         gameOver = true;
     }
