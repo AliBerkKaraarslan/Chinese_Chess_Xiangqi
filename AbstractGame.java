@@ -22,36 +22,26 @@ public abstract class AbstractGame implements Serializable {
 	Horse redHorse1,redHorse2,blackHorse1,blackHorse2;
 	Cannon redCannon1,redCannon2,blackCannon1,blackCannon2;
 
-	/*
-	 * from pozisyonundaki taşı to pozisyonuna taşır.
-	 * Eğer hareket kural dışı ise, ekrana "hatali hareket" mesajı ekrana yazılır ve oyuncunun tekrar oynaması için sırayı değiştirmez.
-	 * Eğer hareket sonucu biri oyunu kazandı ise, "ŞAH MAT! X oyunu kazandı. X'in puanı: A, Y'nin puanı: B" yazar. X ve Y oyuncuların ismidir. A ve B aldıkları puanlardır.
-	 * Eğer hareket sonucu pat oldu ise (şahın hiç bir yere hareket edememesi ve başka yapacak hareketinin olmaması durumu), "PAT" mesajı ekrana yazılır ve oyun sonlanır. 
-	 * */
+	
+	//Moves the item from "from" to "to" 
+	//If the move is illegal then prints "Wrong Move!" and doesn't change the turn
+	//If one of the players win the game prints "CHECK MATE! X win the game. X's point is: A, Y's point is: B". Where X and Y are the player names , A and B are points that players get
 	abstract void play(String from, String to);  
 	
-	/*
-	 * Oyunun o anki hali belirtilen dosyaya binary olarak kaydedilir.
-	 * */
+	
+	//Saves the current game to the specified file as binary.
 	abstract void save_binary(String address);  
 	
-	/*
-	 * Oyunun o anki hali belirtilen dosyaya metin dosyası olarak kaydedilir.
-	 * */
+	
+	// Saves the current game to the specified file as text.
 	abstract void save_text(String address);  
 	
-	/*
-	 * Belirtilen adreste kaydedilen metin dosyasına göre oyunu yükler ve oyun kaldığı yerden devam eder. 
-	 * Dosyanın doğru dosya olduğunu varsayabilirsiniz.
-	 * */
+	
+	//Loads a game from specified text file
 	abstract void load_text(String address);  
 	
 	
-	/*
-	 * Belirtilen adreste kaydedilen binary dosyaya göre oyunu yükler ve oyun kaldığı yerden devam eder.
-	 * Dosyanın doğru dosya olduğunu varsayabilirsiniz.
-	 * 
-	 * */
+	//Loads a game from specified binary file
 	abstract void load_binary(String address);  
 	
 	
