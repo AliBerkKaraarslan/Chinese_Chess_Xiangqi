@@ -211,25 +211,25 @@ public class Game extends AbstractGame{
                                     }
 
                                 }else {
-                                    System.out.println("hatali hareket");
+                                    System.out.println("Wrong Move!");
                                 }
                             } else {
-                                System.out.println("hatali hareket");
+                                System.out.println("Wrong Move!");
                             }
                         } else {
-                            System.out.println("hatali hareket");
+                            System.out.println("Wrong Move!");
                         }
                     } else {
-                        System.out.println("hatali hareket");
+                        System.out.println("Wrong Move!");
                     }
                 } else {
-                    System.out.println("hatali hareket");
+                    System.out.println("Wrong Move!");
                 }
             } else {
-                System.out.println("hatali hareket");
+                System.out.println("Wrong Move!");
             }
         }else {
-            System.out.println("hatali hareket");
+            System.out.println("Wrong Move!");
         }
     }
 
