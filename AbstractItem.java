@@ -7,7 +7,7 @@
 
 public abstract class AbstractItem implements ItemInterface{
 
-	private String position;  // tahtadaki konumu gösterir. Örneğin, a1
+	private String position;  // Shows the position of item. For example a1
 
 	public String getPosition(){
 		return position;
