@@ -9,6 +9,6 @@ import java.io.Serializable;
 
 public interface ItemInterface extends Serializable {
 	
-	void move(String destination); // Taşı belirtilen konuma götürür (eğer kural dışı bir durum yoksa)
+	void move(String destination);
 
 }
